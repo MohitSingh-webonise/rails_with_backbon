@@ -1,0 +1,40 @@
+<h1 align="center">Hello World</h1>
+
+<h4 align="center">Enter Player Information</h4>
+<form id="add-player" action="" align="center">
+	Name  <input type="text" name="name" placeholder="Name of the Player"><br/><br/>
+	Age   <input type="text" name="age" placeholder="Age of the Player"><br/><br/>
+	Stage <input type="text" name="stage" placeholder="Stage of the Player"><br/><br/>
+	<input type="submit"  value="Add Player">	
+</form>
+
+
+<script type="text/template" id="player-show">
+	<table align="center">
+		<thead>
+			<tr>
+				<td> Name </td>
+				<td> Age </td>
+				<td> Stage </td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td> <strong> <%%= name %> </strong> </td>
+				<td> <%%= age %> </td>
+				<td> <%%= stage %> </td>
+			</tr>
+		</tbody>
+	</table>
+</script>
+
+
+
+<%#= javascript_include_tag "jquery.min.js" %>
+<%#= javascript_include_tag "lodash.min.js" %>
+
+<%= javascript_include_tag "underscore-min.js" %>
+<%= javascript_include_tag "backbone-min.js" %>
+<%= javascript_include_tag "backbone.localStorage.js" %>
+
+<%= javascript_include_tag "user.js" %>
